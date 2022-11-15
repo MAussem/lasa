@@ -14,6 +14,7 @@ const Footer: NextPage = () => {
       css={{
         background: "#00233DDE",
         marginTop: "2%",
+        overflow: "hidden",
       }}
     >
       {!isMd ? (

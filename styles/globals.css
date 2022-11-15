@@ -1,10 +1,10 @@
 html,
 body {
-  overflow-x: hidden initial;
+  overflow-x: hidden;
 }
-* {
-  outline: 1px solid rgba(255, 0, 0, 0);
-}
+/* * {
+  outline: 1px solid red;
+} */
 hr {
   color: black;
   width: 50%;

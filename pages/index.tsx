@@ -12,30 +12,43 @@ import "aos/dist/aos.css";
 import Statement from "../components/statement";
 import Services from "../components/services";
 import Footer from "../components/footer";
+import Section from "../components/section";
 
 const Home: NextPage = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <Container fluid xl css={{ padding: 0 }}>
+    <Container fluid xl css={{ padding: 0, maxWidth: "100%" }}>
       <Topbar />
       {/* Jumbotron */}
       <Jumbotron />
+      {/*Services*/}
+      <Services />
       {/*Mission Statement*/}
       <Statement />
+      <Section />
       {/* Cards X3 */}
-      <Container xl css={{ background: "#023047" }}>
+      <Container xl css={{ background: "#fff", marginTop: "-12%" }}>
+        <hr
+          data-aos="fade"
+          style={{
+            background: "black",
+            color: "black",
+            borderColor: "black",
+            height: "3px",
+            width: "50px",
+          }}
+        />
         <Text
           data-aos="fade-right"
           size={35}
           css={{
             textAlign: "center",
-            color: "#fff",
-            marginTop: "4%",
+            color: "#000",
           }}
         >
-          Featured Projects
+          Construction Services
         </Text>
         <Grid.Container gap={2}>
           <Grid xs={12} sm={4}>
@@ -74,7 +87,7 @@ const Home: NextPage = () => {
           </Grid>
         </Grid.Container>
       </Container>
-      <Services />
+
       <Footer />
     </Container>
   );

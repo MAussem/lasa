@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { Card, Text, Row, Col, Button } from "@nextui-org/react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Tilt from "react-parallax-tilt";
 
 interface props {
   title: string;
@@ -18,45 +19,59 @@ const InfoCard: NextPage<props> = (props) => {
   }, []);
   const { title, label, imageURL } = props;
   return (
-    <Card data-aos="fade-left">
-      <Card.Header css={{ position: "absolute", top: 5 }}>
-        <Col>
-          <Text size={12} weight="bold" transform="uppercase" color="#ffffffAA">
-            {title}
-          </Text>
-          <Text h4 color="#ffffffAA">
-            {label}
-          </Text>
-        </Col>
-      </Card.Header>
-      <Card.Image src={imageURL}></Card.Image>
-      <Card.Footer
-        isBlurred
-        css={{ position: "absolute", bgBlur: "#0f111466", bottom: 0 }}
-      >
-        <Row>
+    <Tilt
+      className="tilt"
+      tiltMaxAngleX={40}
+      tiltMaxAngleY={40}
+      perspective={1000}
+      transitionSpeed={1000}
+      gyroscope={true}
+    >
+      <Card data-aos="fade-left">
+        <Card.Header css={{ position: "absolute", top: 5 }}>
           <Col>
-            <Text color="#d1d1d1" size={18}>
-              Type of Project
+            <Text
+              size={12}
+              weight="bold"
+              transform="uppercase"
+              color="#ffffffAA"
+            >
+              {title}
+            </Text>
+            <Text h4 color="#ffffffAA">
+              {label}
             </Text>
           </Col>
-          <Col>
-            <Row justify="flex-end">
-              <Button flat auto rounded color="primary">
-                <Text
-                  css={{ color: "inherit" }}
-                  size={12}
-                  weight="bold"
-                  transform="uppercase"
-                >
-                  View More
-                </Text>
-              </Button>
-            </Row>
-          </Col>
-        </Row>
-      </Card.Footer>
-    </Card>
+        </Card.Header>
+        <Card.Image src={imageURL}></Card.Image>
+        <Card.Footer
+          isBlurred
+          css={{ position: "absolute", bgBlur: "#0f111466", bottom: 0 }}
+        >
+          <Row>
+            <Col>
+              <Text color="#d1d1d1" size={18}>
+                Type of Project
+              </Text>
+            </Col>
+            <Col>
+              <Row justify="flex-end">
+                <Button flat auto rounded color="primary">
+                  <Text
+                    css={{ color: "inherit" }}
+                    size={12}
+                    weight="bold"
+                    transform="uppercase"
+                  >
+                    View More
+                  </Text>
+                </Button>
+              </Row>
+            </Col>
+          </Row>
+        </Card.Footer>
+      </Card>
+    </Tilt>
   );
 };
 

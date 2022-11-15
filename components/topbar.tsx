@@ -17,11 +17,10 @@ const Topbar: NextPage = () => {
     <>
       {/* NavBar */}
       <Navbar
-        isCompact
         maxWidth="xl"
         css={{
           $$navbarBackgroundColor: "rgba(0, 0, 0, 0.5)",
-          $$navbarBlurBackgroundColor: "#023047",
+          $$navbarBlurBackgroundColor: "#fff",
         }}
       >
         <Navbar.Brand showIn="md">
@@ -39,7 +38,7 @@ const Topbar: NextPage = () => {
                 key={item}
                 css={{
                   marginTop: "2%",
-                  color: "white",
+                  color: "#000",
                   zIndex: 100,
                   marginRight: "4%",
                 }}

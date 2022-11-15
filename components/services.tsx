@@ -24,7 +24,10 @@ const Services: NextPage = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <Container lg css={{ marginTop: "2%", maxWidth: "100%" }}>
+    <Container
+      lg
+      css={{ marginTop: "2%", maxWidth: "100%", overflow: "hidden" }}
+    >
       {!isMd ? (
         <>
           <hr

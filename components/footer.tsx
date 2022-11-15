@@ -10,7 +10,12 @@ const Footer: NextPage = () => {
   const isMd = useMediaQuery(960);
 
   return (
-    <Grid.Container gap={10} css={{ background: "#00233DDE", marginTop: "2%" }}>
+    <Grid.Container
+      css={{
+        background: "#00233DDE",
+        marginTop: "2%",
+      }}
+    >
       {!isMd ? (
         <>
           <Grid xs={4} data-aos="fade">

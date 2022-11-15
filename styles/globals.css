@@ -2,9 +2,9 @@ html,
 body {
   overflow-x: hidden initial;
 }
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
 hr {
   color: black;
   width: 50%;

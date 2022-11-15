@@ -132,6 +132,7 @@ const Footer: NextPage = () => {
                 flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
+                marginTop: "4%",
               }}
             >
               <IconContext.Provider value={{ color: "#fff" }}>
@@ -226,7 +227,9 @@ const Footer: NextPage = () => {
                 Our experts will answer your questions, provide advice and offer
                 insights.
               </Text>
-              <Button size="xl">Contact Us</Button>
+              <Button size="xl" css={{ marginBottom: "4%" }}>
+                Contact Us
+              </Button>
             </Col>
           </Grid>
         </>

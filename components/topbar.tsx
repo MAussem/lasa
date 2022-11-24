@@ -21,6 +21,9 @@ const Topbar: NextPage = () => {
         css={{
           $$navbarBackgroundColor: "rgba(0, 0, 0, 0.5)",
           $$navbarBlurBackgroundColor: "#fff",
+          position: "fixed",
+          top: "0",
+          width: "100%",
         }}
       >
         <Navbar.Brand showIn="md">

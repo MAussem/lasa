@@ -29,7 +29,7 @@ const Home: NextPage = () => {
       <Statement />
       <Section />
       {/* Cards X3 */}
-      <Container xl css={{ background: "#fff", marginTop: "-12%" }}>
+      <Container xl css={{ background: "#fff", marginTop: "2%" }}>
         <hr
           data-aos="fade"
           style={{
@@ -67,23 +67,6 @@ const Home: NextPage = () => {
           </Grid>
           <Grid xs={12} sm={4}>
             <InfoCard label="Text" title="Title" imageURL="tail.jpg" />
-          </Grid>
-          <Grid xs={12} sm={4}>
-            <InfoCard label="Text" title="Title" imageURL="tail.jpg" />
-          </Grid>
-          <Grid xs={12} sm={4}>
-            <InfoCard
-              label="Text"
-              title="Project Title"
-              imageURL="red_dawn.jpg"
-            />
-          </Grid>
-          <Grid xs={12} sm={4}>
-            <InfoCard
-              label="Text"
-              title="Project Title"
-              imageURL="sunset.jpg"
-            />
           </Grid>
         </Grid.Container>
       </Container>

@@ -21,7 +21,7 @@ const Section: NextPage = () => {
           justify="center"
           xl
           css={{
-            height: "800px",
+            height: "600px",
             backgroundImage: "url(bg1.png)",
             backgroundRepeat: "no-repeat",
             marginTop: "-8%",
@@ -58,7 +58,7 @@ const Section: NextPage = () => {
           justify="center"
           xl
           css={{
-            height: "550px",
+            height: "400px",
             backgroundImage: "url(bg1.png)",
             backgroundRepeat: "no-repeat",
             marginTop: "-8%",
@@ -83,7 +83,7 @@ const Section: NextPage = () => {
             css={{
               color: "#fff",
               padding: "4%",
-              marginTop: "-30%",
+              marginTop: "-20%",
             }}
           >
             Where you live is everything, which is why we are committed to

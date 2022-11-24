@@ -28,7 +28,7 @@ const Statement: NextPage = () => {
             css={{
               background: "#16bfbf",
               marginTop: "15%",
-              marginLeft: "-60%",
+              marginLeft: "-52%",
               width: "50%",
             }}
           >

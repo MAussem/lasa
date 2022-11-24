@@ -71,10 +71,9 @@ const Jumbotron: NextPage = () => {
             size={25}
             css={{
               color: "#fff",
-              marginTop: "25%",
-              marginBottom: "-5%",
+              marginTop: "40%",
               lineHeight: "30px",
-              textAlign: "center",
+              marginLeft: "2.2%",
             }}
           >
             Building houses with Integrity, trust, Quality workmanship &
@@ -84,7 +83,7 @@ const Jumbotron: NextPage = () => {
             size={15}
             css={{
               color: "#fff",
-              textAlign: "center",
+              marginLeft: "2.2%",
             }}
           >
             Building houses with Integrity, trust, Quality workmanship &
@@ -96,8 +95,8 @@ const Jumbotron: NextPage = () => {
             css={{
               color: "#fff",
               background: "#16BFBFB3",
-              marginBottom: "20%",
-              marginLeft: "16%",
+              marginBottom: "10%",
+              marginLeft: "2%",
             }}
           >
             Find Out More

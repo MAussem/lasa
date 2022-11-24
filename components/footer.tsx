@@ -5,6 +5,7 @@ import { useMediaQuery } from "./useMediaQuery.js";
 import { Grid, Text, Col, Button } from "@nextui-org/react";
 import { IconContext } from "react-icons";
 import { FaPencilRuler } from "react-icons/fa";
+import "animate.css";
 
 const Footer: NextPage = () => {
   const isMd = useMediaQuery(960);
@@ -19,20 +20,24 @@ const Footer: NextPage = () => {
     >
       {!isMd ? (
         <>
-          <Grid xs={4} data-aos="fade">
+          <Grid
+            xs={4}
+            className="animate__animated animate__fadeIn animate__slower"
+          >
             <Col
               css={{
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "flex-start",
                 alignItems: "flex-start",
+                margin: "15%",
               }}
             >
               <IconContext.Provider value={{ color: "#fff" }}>
                 <FaPencilRuler size={70} />
               </IconContext.Provider>
               <Text
-                data-aos="fade"
+                className="animate__animated animate__fadeIn animate__slower"
                 size={20}
                 css={{
                   textAlign: "center",
@@ -44,7 +49,10 @@ const Footer: NextPage = () => {
               </Text>
             </Col>
           </Grid>
-          <Grid xs={4} data-aos="fade">
+          <Grid
+            xs={4}
+            className="animate__animated animate__fadeIn animate__slower"
+          >
             <Col
               css={{
                 display: "flex",
@@ -54,17 +62,17 @@ const Footer: NextPage = () => {
               }}
             >
               <Text
-                data-aos="fade"
+                className="animate__animated animate__fadeIn animate__slower"
                 size={15}
                 css={{
                   color: "#fff",
-                  marginTop: "1%",
+                  marginTop: "15%",
                 }}
               >
                 Address: 123 fake street, <br /> Waterloo, Ontario L9B2S7 Canada
               </Text>
               <Text
-                data-aos="fade"
+                className="animate__animated animate__fadeIn animate__slower"
                 size={15}
                 css={{
                   textAlign: "center",
@@ -75,7 +83,7 @@ const Footer: NextPage = () => {
                 905-123-4567
               </Text>
               <Text
-                data-aos="fade"
+                className="animate__animated animate__fadeIn animate__slower"
                 size={15}
                 css={{
                   textAlign: "center",
@@ -87,7 +95,10 @@ const Footer: NextPage = () => {
               </Text>
             </Col>
           </Grid>
-          <Grid xs={4} data-aos="fade">
+          <Grid
+            xs={4}
+            className="animate__animated animate__fadeIn animate__slower"
+          >
             <Col
               css={{
                 display: "flex",
@@ -97,18 +108,18 @@ const Footer: NextPage = () => {
               }}
             >
               <Text
-                data-aos="fade"
+                className="animate__animated animate__fadeIn animate__slower"
                 size={25}
                 css={{
                   textAlign: "center",
                   color: "#fff",
-                  marginTop: "1%",
+                  marginTop: "8%",
                 }}
               >
                 More Questions for Us?
               </Text>
               <Text
-                data-aos="fade"
+                className="animate__animated animate__fadeIn animate__slower"
                 size={15}
                 css={{
                   textAlign: "center",
@@ -119,13 +130,31 @@ const Footer: NextPage = () => {
                 Our experts will answer your questions, provide advice and offer
                 insights.
               </Text>
-              <Button size="xl">Contact Us</Button>
+              <Button
+                size="xl"
+                bordered
+                flat
+                css={{
+                  color: "#fff",
+                  marginTop: "2%",
+                  marginBottom: "4%",
+                  borderColor: "#fff",
+                  "&:hover": {
+                    background: "rgba(255, 255, 255, 0.162)",
+                  },
+                }}
+              >
+                Contact Us
+              </Button>
             </Col>
           </Grid>
         </>
       ) : (
         <>
-          <Grid xs={12} data-aos="fade">
+          <Grid
+            xs={12}
+            className="animate__animated animate__fadeIn animate__slower"
+          >
             <Col
               css={{
                 display: "flex",
@@ -139,7 +168,7 @@ const Footer: NextPage = () => {
                 <FaPencilRuler size={70} />
               </IconContext.Provider>
               <Text
-                data-aos="fade"
+                className="animate__animated animate__fadeIn animate__slower"
                 size={20}
                 css={{
                   textAlign: "center",
@@ -151,7 +180,10 @@ const Footer: NextPage = () => {
               </Text>
             </Col>
           </Grid>
-          <Grid xs={12} data-aos="fade">
+          <Grid
+            xs={12}
+            className="animate__animated animate__fadeIn animate__slower"
+          >
             <Col
               css={{
                 display: "flex",
@@ -161,7 +193,7 @@ const Footer: NextPage = () => {
               }}
             >
               <Text
-                data-aos="fade"
+                className="animate__animated animate__fadeIn animate__slower"
                 size={15}
                 css={{
                   color: "#fff",
@@ -172,7 +204,7 @@ const Footer: NextPage = () => {
                 Address: 123 fake street, <br /> Waterloo, Ontario L9B2S7 Canada
               </Text>
               <Text
-                data-aos="fade"
+                className="animate__animated animate__fadeIn animate__slower"
                 size={15}
                 css={{
                   textAlign: "center",
@@ -183,7 +215,7 @@ const Footer: NextPage = () => {
                 905-123-4567
               </Text>
               <Text
-                data-aos="fade"
+                className="animate__animated animate__fadeIn animate__slower"
                 size={15}
                 css={{
                   textAlign: "center",
@@ -195,7 +227,10 @@ const Footer: NextPage = () => {
               </Text>
             </Col>
           </Grid>
-          <Grid xs={12} data-aos="fade">
+          <Grid
+            xs={12}
+            className="animate__animated animate__fadeIn animate__slower"
+          >
             <Col
               css={{
                 display: "flex",
@@ -205,7 +240,7 @@ const Footer: NextPage = () => {
               }}
             >
               <Text
-                data-aos="fade"
+                className="animate__animated animate__fadeIn animate__slower"
                 size={25}
                 css={{
                   textAlign: "center",
@@ -216,7 +251,7 @@ const Footer: NextPage = () => {
                 More Questions for Us?
               </Text>
               <Text
-                data-aos="fade"
+                className="animate__animated animate__fadeIn animate__slower"
                 size={15}
                 css={{
                   textAlign: "center",

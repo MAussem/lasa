@@ -206,10 +206,25 @@ const Services: NextPage = () => {
         </>
       ) : (
         <>
+          <hr
+            data-aos="fade"
+            style={{
+              marginTop: "6%",
+              background: "black",
+              color: "black",
+              borderColor: "black",
+              height: "3px",
+              width: "50px",
+            }}
+          />
           <Text
             data-aos="fade"
             size={25}
-            css={{ textAlign: "center", color: "#000", marginBottom: "2%" }}
+            css={{
+              textAlign: "center",
+              color: "#000",
+              marginBottom: "2%",
+            }}
           >
             Lasa offers a full range of services to meet your needs.
           </Text>
